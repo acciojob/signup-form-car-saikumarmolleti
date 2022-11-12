@@ -1,2 +1,19 @@
-
+#name{
+    margin: 4px;
+}
+#email{
+    margin: 4px;
+}
+#age{
+    margin: 4px;
+}
+#password{
+    margin: 4px;
+}
+#dob{
+    margin: 4px;
+}
+#cars{
+    margin: 4px;
+}
 /* Your CSS Code here. */

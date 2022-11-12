@@ -5,8 +5,57 @@
 <head>
 	<link rel="stylesheet" href="styles.css">
 </head>
+<!-- 
+Name*,
+Email*
+Gender* (radio buttons),
+Car Brands (options : [BMW, Audi, Mercedez])
+Age*
+DOB*
+Password*
+submit button.
+Kindly follow all the instructions mentioned below so that your code passes all the test cases
 
+Instructions:
+
+* are required fields,
+Use method attribute value that you should use in this case for the form!
+The respective input elements for the mentioned fields should have ids #name, #email, #password, #cars, #age, #dob. For example, The element for selecting car brand should have id #cars
+The radio buttons for gender should have name attribute as gender.
+All input elements must also have corresponding labels with for attribute set to id's of element they belong. For example, the label for input of name will be <label for="name"> Name</label>
+ -->
 <body>
+	<form method="post">
+		<label for="name">Name</label>
+		<input type="text" name="name" id="name" required>
+		<br>
+		<label for="email">Email</label>
+		<input type="email" name="email" id="email" required>
+		<br>
+		<label for="gender">Gender</label>
+		<lable>Male</lable>
+		<input type="radio" name="gender" id="gender" required >
+		<label>Female</label>
+		<input type="radio" name="gender" id="gender" required>
+		<br>
+		<label for="cars">Car Brands</label>
+		<select id="cars" name="cars" >
+			<option selected>BMW</option>
+			<option>Audi</option>
+			<option>Mercedez</option>
+		</select>
+		<br>
+		<label for="age">Age</label>
+		<input type="number" name="age" id="age" required>
+		<br>
+		<label for="dob">DOB</label>
+		<input type="date" name="dob" id="dob" required>
+		<br>
+		<label for="password">Password</label>
+		<input type="password" name="password" id="password" required>
+		<br>
+		<button type="submit" >Submit</button>
+	</form>
 	<!-- the entire body must be written by student -->
     <script type="text/javascript" src="./script.js">
 </script>
